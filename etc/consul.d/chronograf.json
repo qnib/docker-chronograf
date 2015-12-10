@@ -1,0 +1,11 @@
+{
+  "service": {
+    "name": "chronograf",
+    "port": 10000,
+    "tags": [],
+    "check": {
+      "script": "nmap 127.0.0.1 -PN -p 10000 | grep open",
+      "interval": "10s"
+    }
+  }
+}
